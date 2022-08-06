@@ -11,7 +11,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 }
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/activity', {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser:true,
     useUnifiedTopology: true
 });
@@ -25,4 +25,4 @@ app.use(cors(corsOptions))
 const activityRouter = require('./routes/activity')
 app.use('/activity', activityRouter)
 
-app.listen(3000, () => console.log('running'))
+app.listen(8000, () => console.log('running'))
