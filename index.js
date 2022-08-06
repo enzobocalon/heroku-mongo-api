@@ -25,4 +25,6 @@ app.use(cors(corsOptions))
 const activityRouter = require('./routes/activity')
 app.use('/activity', activityRouter)
 
-app.listen(8000, () => console.log('running'))
+
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => console.log('running'))
