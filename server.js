@@ -11,7 +11,10 @@ const corsOptions = {
     optionSuccessStatus: 200,
 }
 
-mongoose.connect(process.env.MONGOOSE_URI || 'mongodb://localhost/activity');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/activity', {
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+});
 const db = mongoose.connection;
 db.on('error', (err) => console.error(err))
 db.once('open', () => console.log('connected to db'))
