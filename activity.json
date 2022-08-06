@@ -1,0 +1,28 @@
+{
+    "messages" : [
+        {
+            "message": "Complete online JavaScript course",
+            "completed": true
+        },
+        {
+            "message": "Jog around the park 3x",
+            "completed": false
+        },
+        {
+            "message": "10 minutes meditation",
+            "completed": false
+        },
+        {
+            "message": "Read for 1 hour",
+            "completed": false
+        },
+        {
+            "message": "Pick up groceries",
+            "completed": false
+        },
+        {
+            "message": "Complete Todo App on Frontend Mentor",
+            "completed": false
+        }
+    ]
+}
