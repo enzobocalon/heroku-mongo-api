@@ -22,4 +22,4 @@ app.use(cors(corsOptions))
 const activityRouter = require('./routes/activity')
 app.use('/activity', activityRouter)
 
-app.listen(8000, () => console.log('running'))
+app.listen(3000, () => console.log('running'))
