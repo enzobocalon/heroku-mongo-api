@@ -10,7 +10,8 @@ const corsOptions = {
     credentials: true,
     optionSuccessStatus: 200,
 }
-
+// process.env.MONGODB_URI
+// 'mongodb://localhost/activity'
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser:true,
     useUnifiedTopology: true
