@@ -20,7 +20,8 @@ router.get('/:id', getActivity, (req, res) => {
 router.post('/', async (req, res) => {
     const activity = new Activity({
         message: req.body.message,
-        completed: req.body.completed
+        completed: req.body.completed,
+        isDeleatable: req.body.isDeleatable
     })
 
     try{

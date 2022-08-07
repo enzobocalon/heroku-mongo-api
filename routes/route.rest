@@ -10,8 +10,9 @@ POST http://localhost:8000/activity
 Content-Type: application/json
 
         {
-            "message": "Complete Todo App on Frontend Mentor",
-            "completed": false
+    "message": "Complete TodoApp on Frontend Mentor",
+    "completed": false,
+    "isDeleatable": false
         }
 
 
@@ -25,4 +26,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8000/activity/62ec768bdfc9c2512739ece8
+DELETE http://localhost:8000/activity/62ed6a85a4ccdab716734fc4

@@ -8,7 +8,11 @@ const activitySchema = new mongoose.Schema({
     completed: {
         type: Boolean,
         required: false
-    }
+    },
+    isDeleatable: {
+        type: Boolean,
+        required: true
+    },
 })
 
 module.exports = mongoose.model('Activity', activitySchema)
